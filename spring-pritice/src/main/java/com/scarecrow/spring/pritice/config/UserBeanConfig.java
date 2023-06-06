@@ -1,6 +1,6 @@
 package com.scarecrow.spring.pritice.config;
 
-import com.scarecrow.spring.pritice.life.UserBean;
+import com.scarecrow.spring.pritice.xml.lifecycle.UserBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

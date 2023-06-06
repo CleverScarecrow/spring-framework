@@ -1,4 +1,4 @@
-package com.scarecrow.spring.pritice.life;
+package com.scarecrow.spring.pritice.xml.lifecycle;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class BeanLifeTest {
 
 	public static void main(String[] args) {
-		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("life/bean_life.xml");
+		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("xml/lifecycle/bean_life.xml");
 		UserBean userBean = applicationContext.getBean(UserBean.class);
 		System.out.println(userBean);
 	}

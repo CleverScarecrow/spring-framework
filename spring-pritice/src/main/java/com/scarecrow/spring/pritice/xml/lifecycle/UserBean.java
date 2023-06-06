@@ -1,4 +1,4 @@
-package com.scarecrow.spring.pritice.life;
+package com.scarecrow.spring.pritice.xml.lifecycle;
 
 public class UserBean {
 
