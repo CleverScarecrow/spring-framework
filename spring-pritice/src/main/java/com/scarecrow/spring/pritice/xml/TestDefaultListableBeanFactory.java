@@ -1,5 +1,7 @@
 package com.scarecrow.spring.pritice.xml;
 
+import java.util.Map;
+
 import com.scarecrow.spring.pritice.xml.naming.TestBean;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
@@ -23,6 +25,11 @@ public class TestDefaultListableBeanFactory {
 		String[] beanNamesForType = defaultListableBeanFactory.getBeanNamesForType(TestBean.class);
 		for (String s : beanNamesForType) {
 			System.out.println(s);
+		}
+		System.out.println("---getBeansOfType---");
+		Map<String, TestBean> beansOfType = defaultListableBeanFactory.getBeansOfType(TestBean.class);
+		for (Map.Entry<String, TestBean> stringTestBeanEntry : beansOfType.entrySet()) {
+			System.out.println(stringTestBeanEntry.getKey() + " : " + stringTestBeanEntry.getValue());
 		}
 
 	}
